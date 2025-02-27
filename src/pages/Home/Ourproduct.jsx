@@ -2,47 +2,53 @@ import React, { useState, useEffect } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
 import ProductCard from "../Product/ProductCard";
+import RMC from "../../assets/rmc.jpg"
+import Steel from "../../assets/steel.jpg"
+import Blocks from "../../assets/blocks1.jpg"
+import Ash from "../../assets/ash.jpg"
+import Agri from "../../assets/agri.jpg"
+import Pond from "../../assets/pond.jpg"
+
+
 
 const OurProduct = () => {
   const products = [
     {
       id: 1,
-      // icons: ,
-      name: "Superior Metal Solutions for Every Industry",
-      description: "We provide high-quality metal materials, including aluminum, copper, and stainless steel, for construction, fabrication, and industrial needs. Get durable, versatile, and cost-effective metal solutions. Reach out for more details!.....",
-      image:
-        "https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "High-Quality Ready-Mix Concrete (RMC) for Reliable Construction",
+      description: "Our premium Ready-Mix Concrete (RMC) ensures strength, durability, and efficiency for all construction projects. Designed for residential, commercial, and industrial use, it offers consistent quality and faster project completion. Contact us today!......",
+      image:RMC
     },
     {
       id: 2,
-      name: "High-Quality Ready-Mix Concrete (RMC) for Reliable Construction",
-      description: "Our premium Ready-Mix Concrete (RMC) ensures strength, durability, and efficiency for all construction projects. Designed for residential, commercial, and industrial use, it offers consistent quality and faster project completion. Contact us today!......",
-      image:
-        "https://images.unsplash.com/photo-1565626424178-c699f6601afd?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Durable Concrete Blocks for Strong Foundations",
+      description: "Our high-quality concrete blocks offer superior strength, durability, and thermal insulation. Ideal for residential, commercial, and industrial construction, they ensure stability and long-lasting performance. Contact us for more details!.......",
+      image: Blocks,
     },
     {
       id: 3,
-      name: "Durable Concrete Blocks for Strong Foundations",
-      description: "Our high-quality concrete blocks offer superior strength, durability, and thermal insulation. Ideal for residential, commercial, and industrial construction, they ensure stability and long-lasting performance. Contact us for more details!.......",
-      image: "https://plus.unsplash.com/premium_photo-1675864663171-9b37143e0a13?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGJyaWNrJTIwYmxvY2tzfGVufDB8fDB8fHww",
+      name: "High-Quality Fly Ash for Sustainable Construction",
+      description: "Enhance your construction projects with premium fly ash – a fine, eco-friendly material ideal for concrete, bricks, and road construction Improve strength, durability, and sustainability while reducing environmental impact. Contact us for more details!.......",
+      image: Ash,
     },
     {
       id: 4,
-      name: "High-Quality Fly Ash for Sustainable Construction",
-      description: "Enhance your construction projects with premium fly ash – a fine, eco-friendly material ideal for concrete, bricks, and road construction Improve strength, durability, and sustainability while reducing environmental impact. Contact us for more details!.......",
-      image: "https://files.oaiusercontent.com/file-RhTMwrnLT6uLUH9LygmrCZ?se=2025-02-23T16%3A29%3A10Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3e4614a8-229f-414f-a659-5cf288562515.webp&sig=2fNgdH7defnNhJrO%2B8xWRD6BTqkJZ80uBsGo/xtbOPE%3D",
+      name: "Eco-Friendly Pond Ash for Sustainable Construction",
+      description: "Pond ash is a fine-grained byproduct of coal combustion, ideal for road construction, brick manufacturing, and soil stabilization. It offers a cost-effective, eco-friendly alternative to traditional materials, reducing environmental impact while enhancing durability.....",
+      image: Pond,
     },
     {
       id: 5,
-      name: "Eco-Friendly Pond Ash for Sustainable Construction",
-      description: "Pond ash is a fine-grained byproduct of coal combustion, ideal for road construction, brick manufacturing, and soil stabilization. It offers a cost-effective, eco-friendly alternative to traditional materials, reducing environmental impact while enhancing durability.....",
-      image: "https://images.unsplash.com/photo-1518457901585-7ef149f860f9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBvbmQlMjBhc2h8ZW58MHx8MHx8fDA%3D",
+      // icons: ,
+      name: "Superior Metal Solutions for Every Industry",
+      description: "We provide high-quality metal materials, including aluminum, copper, and stainless steel, for construction, fabrication, and industrial needs. Get durable, versatile, and cost-effective metal solutions. Reach out for more details!.....",
+      image:Steel
     },
     {
       id: 6,
       name: "High-Quality Aggregate for Strong & Durable Construction ",
       description: "Our premium aggregates, including crushed stone, gravel, and sand, provide excellent strength and stability for concrete, road construction, and landscaping. Sourced for durability and consistency, they ensure a solid foundation for any project. Contact us today!.....",
-      image: "https://images.unsplash.com/photo-1704175970211-4c2c15b18328?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8QWdncmVnYXRlfGVufDB8fDB8fHww",
+      image: Agri,
     },
   ];
 

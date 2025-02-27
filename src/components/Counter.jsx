@@ -12,11 +12,8 @@ const CounterSection = () => {
       initial={{ scale: 1.1, opacity: 0 }}
       animate={inView ? { scale: 1, opacity: 1 } : { scale: 1.1, opacity: 0 }}
       transition={{ duration: 1.5 }}
-      className="mt-10 relative py-16 rounded-xl bg-cover bg-center overflow-hidden"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1562504208-03d85cc8c23e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-      }}
+      className="mt-10 map relative py-16 rounded-xl bg-cover bg-center overflow-hidden"
+      
     >
       {/* Dark Overlay for Readability */}
       <div className="absolute inset-0 bg-black/60 rounded-xl"></div>

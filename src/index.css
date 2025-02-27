@@ -13,3 +13,7 @@ body{
 .whyme{
     background-image: url("./assets/whyme.jpg");
 }
+
+.map{
+    background-image: url("../src/assets/map.jpg");
+}

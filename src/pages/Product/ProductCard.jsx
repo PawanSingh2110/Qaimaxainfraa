@@ -9,7 +9,7 @@ const ProductCard = ({ item }) => {
         alt={item.name}
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
-      <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 text-white  transition-all duration-500 group-hover:bg-black/80">
+      <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 text-white  transition-all duration-500 group-hover:bg-black/80">
         <h3 className="text-2xl font-bold uppercase">{item.name}</h3>
         <p className="text-white text-sm mt-2 line-clamp-3">{item.description}</p>
         <Link

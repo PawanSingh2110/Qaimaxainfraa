@@ -1,6 +1,15 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
+import banner from "../../assets/bgbanner.jpg"
+import Steel from "../../assets/steel.jpg"
+import Blocks from "../../assets/blocks2.jpg"
+import RMC2 from "../../assets/RMC2.jpg"
+import Ash from "../../assets/ash.jpg"
+import Agri from "../../assets/agri.jpg"
+import Pond from "../../assets/pond.jpg"
+
+
 
 const products = [
   {
@@ -8,8 +17,7 @@ const products = [
     name: "Steel",
     description:
       "Steel is one of the most versatile and durable materials used in construction and manufacturing. It is known for its exceptional strength, resistance to corrosion, and ability to withstand extreme environmental conditions. Steel is commonly used in skyscrapers, bridges, industrial machinery, and automobiles. It is recyclable and can be molded into various forms, making it an eco-friendly and cost-effective choice for builders and engineers. Modern steel manufacturing incorporates advanced techniques to enhance its properties, ensuring longevity and structural stability in all applications. Additionally, steel’s ability to blend with other materials allows architects and designers to create innovative and aesthetically pleasing structures. In recent years, advancements in metallurgy have led to the development of high-strength, lightweight steel alloys that further expand its applications. The construction industry continues to rely heavily on steel for its load-bearing capacity, seismic resistance, and adaptability to modern architectural trends.",
-    image:
-      "https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:Pond
   },
   {
     id: 2,
@@ -36,7 +44,7 @@ const ProductDetail = () => {
     <div>
       <div className="relative w-full h-72">
         <motion.img
-          src="https://images.unsplash.com/photo-1495036019936-220b29b930ea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={banner}
           alt="Product Background"
           className="w-full h-full object-cover brightness-50"
           initial={{ opacity: 0 }}
