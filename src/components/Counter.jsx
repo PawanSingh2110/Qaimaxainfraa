@@ -1,0 +1,61 @@
+import React from "react";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
+const CounterSection = () => {
+  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ scale: 1.1, opacity: 0 }}
+      animate={inView ? { scale: 1, opacity: 1 } : { scale: 1.1, opacity: 0 }}
+      transition={{ duration: 1.5 }}
+      className="mt-10 relative py-16 rounded-xl bg-cover bg-center overflow-hidden"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1562504208-03d85cc8c23e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      }}
+    >
+      {/* Dark Overlay for Readability */}
+      <div className="absolute inset-0 bg-black/60 rounded-xl"></div>
+
+      {/* Header Text */}
+      <motion.h3
+        initial={{ opacity: 0, y: -20 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+        transition={{ duration: 1 }}
+        className="relative z-10 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-500 mb-8"
+      >
+        Eco-Friendly | Innovation | Performance
+      </motion.h3>
+
+      {/* Counter Section */}
+      <div className="relative z-10 flex justify-center gap-10 flex-wrap text-white text-center">
+        {[
+          { label: "Clients", end: 134 },
+          { label: "Manufacturers", end: 54 },
+          { label: "Projects", end: 432 },
+          { label: "Cities", end: 6 },
+           // New counter added
+        ].map((item, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ duration: 1, delay: index * 0.2 }}
+            className="bg-white/20 p-5 rounded-xl shadow-lg w-40 backdrop-blur-md"
+          >
+            <h3 className="text-4xl font-bold text-yellow-300">
+              {inView && <CountUp start={0} end={item.end} duration={2} />}
+            </h3>
+            <p className="text-lg">{item.label}</p>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
+export default CounterSection;
