@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-wrap -mx-4">
           {/* Company Information */}
           <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
-            <h2 className="text-2xl font-bold mb-4 cursor-pointer hover:text-[#737373]">
+            <h2 className="text-2xl font-bold mb-4 cursor-pointer hover:text-orange-400">
               <a href="/">QAIMAXA INFRA</a>
             </h2>
             <p className="mb-4">
@@ -34,21 +34,21 @@ const Footer = () => {
             <h2 className="text-2xl font-bold mb-4">Products</h2>
             <div className="flex">
               <ul className="list-none mr-4">
-                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-[#737373]">
+                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
                   <a href="#">RMC</a>
                 </li>
-                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-[#737373]">
+                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
                   <a href="#">Fly Ash</a>
                 </li>
-                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-[#737373]">
+                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
                   <a href="#">Pond Ash</a>
                 </li>
               </ul>
               <ul className="list-none">
-                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-[#737373]">
+                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
                   <a href="#">Blocks</a>
                 </li>               
-                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-[#737373]">
+                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
                   <a href="#">Aggregates</a>
                 </li>
               </ul>
@@ -57,13 +57,13 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="w-full md:w-1/3 px-4">
             <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-            <address className="not-italic mb-4">
-              123 Innovation Drive<br />
-              Mumbai, Maharashtra, India
+            <address className="not-italic mb-4 hover:text-orange-400 cursor-pointer">
+            Aloo Paroo Trust Bldg,<br/> Office No 5, 2nd Cross Lane ,<br/> L.J Road, Mahim-West, Mumbai - 400016
+
             </address>
-            <p className="mb-2">Phone: <a href="tel:+1234567890" className="hover:text-[#737373]">+91 9819320999</a></p>
-            <p className="mb-2">Landline: <a href="tel:+0987654321" className="hover:text-[#737373]">+91 9321790831</a></p>
-            <p>Email: <a href="mailto:info@QAIMAXA INFRA" className="hover:text-[#737373]">info@QAIMAXA INFRA  </a></p>
+            <p className="mb-2">Phone: <a href="tel:+1234567890" className="hover:text-orange-400">+91 9819320999</a></p>
+            <p className="mb-2">Landline: <a href="tel:+0987654321" className="hover:text-orange-400">+91 9321790831</a></p>
+            <p>Email: <a href="mailto:info@QAIMAXA INFRA" className="hover:text-orange-400">info@QAIMAXA INFRA  </a></p>
           </div>
         </div>
         {/* Policy Links */}
