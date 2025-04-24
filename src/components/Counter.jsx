@@ -42,9 +42,9 @@ const CounterSection = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 1, delay: index * 0.2 }}
-            className="bg-white/20 p-5 rounded-xl shadow-lg w-40 backdrop-blur-md"
+            className="bg-white/20 p-5 rounded-xl  shadow-lg w-40 backdrop-blur-md"
           >
-            <h3 className="text-4xl font-bold text-white">
+            <h3 className="text-4xl font-bold text-white ">
               {inView && <CountUp start={0} end={item.end} duration={2} />}
             </h3>
             <p className="text-lg">{item.label}</p>

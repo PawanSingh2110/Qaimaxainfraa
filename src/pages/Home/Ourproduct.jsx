@@ -19,8 +19,8 @@ const OurProduct = () => {
     },
     {
       id: 2,
-      name: "Durable Concrete Blocks for Strong Foundations",
-      description: "Our high-quality concrete blocks offer superior strength, durability, and thermal insulation...",
+      name: "Durable  Blocks for Strong Foundations",
+      description: "Our high-quality  blocks offer superior strength, durability, and thermal insulation...",
       image: Blocks,
     },
     {

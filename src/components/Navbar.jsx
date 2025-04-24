@@ -221,7 +221,7 @@ const Navbar = () => {
                             <button 
                                 key={link.title} 
                                 onClick={link.action || (() => navigate(link.url))} 
-                                className="flex items-center hover:text-pink-400 transition-colors duration-200"
+                                className="flex items-center hover:text-orange-400 transition-colors duration-200"
                             >
                                 <span>{link.title}</span>
                             </button>
