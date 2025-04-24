@@ -191,7 +191,7 @@ const Navbar = () => {
         if (location.pathname === "/") {
             const target = document.getElementById(sectionId);
             if (target) {
-                const offset = 100; // Adjust based on Navbar height
+                const offset = 120; // Adjust based on Navbar height
                 const topPosition = target.getBoundingClientRect().top + window.scrollY - offset;
                 window.scrollTo({ top: topPosition, behavior: "smooth" });
             }
