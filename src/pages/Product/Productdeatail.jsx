@@ -48,8 +48,9 @@ const products = [
     id:3,
     name:"Fly Ash",
     description:`
-      <p>
-    At Qaimaxa Infra, we supply high-quality Fly Ash—a fine, powdery by-product from coal-fired power plants, widely recognized for its role in enhancing the strength, durability, and sustainability of concrete.
+  <p>
+    At Qaimaxa Infra, we supply high-quality Fly Ash—a fine, powdery by-product from coal-fired power plants, widely recognized for its role in enhancing the strength, durability, and sustainability of concrete. <br>
+    Our Fly Ash not only improves construction performance but also supports eco-friendly building practices by reducing reliance on traditional cement.
 </p>
 
 <p>
@@ -211,7 +212,7 @@ const ProductDetail = () => {
         >
           <h2 className="text-2xl font-bold mt-10 lg:mt-0">{product.name}</h2>
           <div
-            className="text-lg mt-4 tracking-widest"
+            className="text-lg mt-4  tracking-widest"
             dangerouslySetInnerHTML={{ __html: product.description }}
           />
         </motion.div>
