@@ -12,7 +12,7 @@ import Pond from "../../assets/pond.jpg";
 const products = [
   {
     id: 1,
-    name: "RMC",
+    name: "Ready Mix Concrete",
     description: `
   <p>Concrete is the backbone of modern construction, providing unparalleled strength and longevity. It consists of cement, water, and aggregates such as sand, gravel, or crushed stone, which together create a solid and durable mixture. Concrete is widely used in building foundations, roads, bridges, and large-scale infrastructure projects. Its ability to resist weathering, fire, and moisture makes it a reliable choice for various environments. Moreover, advancements in concrete technology have led to the development of self-healing concrete, which can repair cracks over time, increasing its lifespan and reducing maintenance costs. Sustainable concrete options are also emerging, incorporating recycled materials to minimize environmental impact. Innovations such as lightweight concrete, ultra-high-performance concrete, and geopolymer concrete are revolutionizing the industry by providing enhanced strength, insulation, and eco-friendliness.</p>
   <br/>
