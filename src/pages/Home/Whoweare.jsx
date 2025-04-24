@@ -16,7 +16,7 @@ const AboutSection = () => {
         animate={headingInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
         transition={{ duration: 1 }}
       >
-         <span className=" text-4xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-500">
+         <span className=" text-4xl font-medium text-black">
            Who We Are
           </span>
       </motion.div>
@@ -28,10 +28,10 @@ const AboutSection = () => {
         animate={textInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        <p className="text-xl mt-5 tracking-widest ">
-        QAIMAXA - Your Trusted Construction Partner.
+        <p className="text-xl mt-5 tracking-widest text-[#737373] ">
+        QAIMAXA INFRA - Your Trusted Construction Partner.
 
-We supply quality construction materials at the best prices, ensuring reliability and timely delivery across Mumbai. From fly ash and RMC concrete to steel and ACC blocks, we provide everything you need for a strong and lasting build.
+We supply quality construction materials at the best prices, ensuring reliability and timely delivery across Mumbai. From fly ash and RMC concrete  and ACC blocks, we provide everything you need for a strong and lasting build.
         </p>
       </motion.div>
 

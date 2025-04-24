@@ -21,11 +21,11 @@ description: "High-quality Ready-Mix Concrete (RMC) for durable and efficient co
     title: "Fly Ash for Sustainable Construction",
     description: "A versatile industrial byproduct used to enhance strength, durability, and eco-friendliness in construction projects."
   },
-  {
-    image: Banner4,
-    title: "Iron and Accessories for Complete Solutions",
-    description: "From iron bars to essential accessories, we offer comprehensive solutions for your construction projects."
-  }
+  // {
+  //   image: Banner4,
+  //   title: "Iron and Accessories for Complete Solutions",
+  //   description: "From iron bars to essential accessories, we offer comprehensive solutions for your construction projects."
+  // }
   
 ];
 const HeroSection = () => {

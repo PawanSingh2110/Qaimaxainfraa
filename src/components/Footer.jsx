@@ -9,10 +9,10 @@ const Footer = () => {
           {/* Company Information */}
           <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-4 cursor-pointer hover:text-pink-500">
-              <a href="/">QaiMaxa</a>
+              <a href="/">QAIMAXA INFRA</a>
             </h2>
             <p className="mb-4">
-              QaiMaxa.Ai is a leading provider of innovative AI solutions, dedicated to transforming industries through cutting-edge technology and unparalleled expertise.
+              QAIMAXA INFRA is a leading provider of innovative AI solutions, dedicated to transforming industries through cutting-edge technology and unparalleled expertise.
             </p>
             <div className="flex space-x-4">
               <a href="#" aria-label="Facebook" className="hover:bg-blue-500 border-2 border-white p-3 rounded-full">
@@ -47,10 +47,7 @@ const Footer = () => {
               <ul className="list-none">
                 <li className="mb-2 before:content-['>'] before:mr-3 hover:text-pink-500">
                   <a href="#">Blocks</a>
-                </li>
-                <li className="mb-2 before:content-['>'] before:mr-3 hover:text-pink-500">
-                  <a href="#">Steel & Metal</a>
-                </li>
+                </li>               
                 <li className="mb-2 before:content-['>'] before:mr-3 hover:text-pink-500">
                   <a href="#">Aggregates</a>
                 </li>
@@ -66,14 +63,14 @@ const Footer = () => {
             </address>
             <p className="mb-2">Phone: <a href="tel:+1234567890" className="hover:text-pink-500">+1 234 567 890</a></p>
             <p className="mb-2">Landline: <a href="tel:+0987654321" className="hover:text-pink-500">+0 987 654 321</a></p>
-            <p>Email: <a href="mailto:info@qaimaxa.ai" className="hover:text-pink-500">info@qaimaxa.ai</a></p>
+            <p>Email: <a href="mailto:info@QAIMAXA INFRA" className="hover:text-pink-500">info@QAIMAXA INFRA</a></p>
           </div>
         </div>
         {/* Policy Links */}
         <div className="border-t border-gray-700 mt-8 pt-4 text-center">
           <a href="#" className="hover:text-pink-500 mx-2">Privacy Policy</a>
           <a href="#" className="hover:text-pink-500 mx-2">Terms of Service</a>
-          <p className="mt-4">&copy; {new Date().getFullYear()} QaiMaxa.Ai. All rights reserved.</p>
+          <p className="mt-4">&copy; {new Date().getFullYear()} QAIMAXA INFRA All rights reserved.</p>
         </div>
       </div>
     </footer>

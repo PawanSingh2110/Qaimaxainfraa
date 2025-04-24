@@ -87,11 +87,11 @@ const TestimonialSection = () => {
          transition={{ duration: 0.6 }}
          viewport={{ once: false }} // Animation runs every time it appears
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">
+          <span className="text-black">
             What Our Clients Say
           </span>
         </motion.h2>
-        <motion.p className="text-black mt-2"
+        <motion.p className="text-[#737373] mt-2"
          initial={{ opacity: 0, y: 50 }}
          whileInView={{ opacity: 1, y: 0 }}
          transition={{ duration: 0.6 }}

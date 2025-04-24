@@ -23,7 +23,7 @@ const CounterSection = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
         transition={{ duration: 1 }}
-        className="relative z-10 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-500 mb-8"
+        className="relative z-10 text-3xl font-bold text-center text-white mb-8"
       >
         Eco-Friendly | Innovation | Performance
       </motion.h3>
@@ -44,7 +44,7 @@ const CounterSection = () => {
             transition={{ duration: 1, delay: index * 0.2 }}
             className="bg-white/20 p-5 rounded-xl shadow-lg w-40 backdrop-blur-md"
           >
-            <h3 className="text-4xl font-bold text-yellow-300">
+            <h3 className="text-4xl font-bold text-white">
               {inView && <CountUp start={0} end={item.end} duration={2} />}
             </h3>
             <p className="text-lg">{item.label}</p>
