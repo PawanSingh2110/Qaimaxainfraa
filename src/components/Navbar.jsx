@@ -202,11 +202,11 @@ const Navbar = () => {
 
     const navLinks = [
         { title: 'Home', url: '/', icon: <FaHome /> },
-        { title: 'About', url: '/about', icon: <FaInfoCircle /> },
+        { title: 'About', url: '#', icon: <FaInfoCircle /> , action: () => handleSectionClick("who we are") },
         { title: 'Products', url: '#', icon: <FaProductHunt />, action: () => handleSectionClick("products") },
         { title: 'WhyUs', url: '#', icon: <FaBlog />, action: () => handleSectionClick("whyus") },
         { title: 'Testimonials', url: '#', icon: <FaComments />, action: () => handleSectionClick("testimonials") },
-        { title: 'Contact', url: '/contact', icon: <FaPhone /> },
+        { title: 'Contact', url: '#', icon: <FaPhone /> , action: () => handleSectionClick("footer")  },
     ];
 
     return (

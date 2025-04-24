@@ -8,7 +8,7 @@ const AboutSection = () => {
   const { ref: textRef, inView: textInView } = useInView({ triggerOnce: false, threshold: 0.3 });
 
   return (
-    <div className="mt-20 w-[80%] mx-auto">
+    <div className="mt-20 w-[80%] mx-auto" id="who we are">
       {/* Who We Are Section */}
       <motion.div
         ref={headingRef}
