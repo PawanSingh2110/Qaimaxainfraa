@@ -152,7 +152,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaBars, FaTimes, FaHome, FaInfoCircle, FaProductHunt, FaBlog, FaComments, FaPhone } from 'react-icons/fa';
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo1.png";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
