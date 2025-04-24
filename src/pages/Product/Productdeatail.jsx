@@ -49,14 +49,14 @@ const products = [
     name:"Fly Ash",
     description:`
   <p>
-    At Qaimaxa Infra, we supply high-quality Fly Ash—a fine, powdery by-product from coal-fired power plants, widely recognized for its role in enhancing the strength, durability, and sustainability of concrete. <br>
+    At Qaimaxa Infra, we supply high-quality Fly Ash—a fine, powdery by-product from coal-fired power plants, widely recognized for its role in enhancing the strength, durability, and sustainability of concrete. </br>
     Our Fly Ash not only improves construction performance but also supports eco-friendly building practices by reducing reliance on traditional cement.
 </p>
-
+</br>
 <p>
     Rich in silica and alumina, Fly Ash acts as a pozzolanic material, reacting with lime in cement to form additional binding compounds. This improves the workability, strength, and impermeability of concrete while significantly reducing its carbon footprint.
 </p>
-<br>
+</br>
 <strong>Why Choose Qaimaxa Fly Ash?</strong>
 <ul style="list-style-type: disc; padding-left: 1.25rem;">
     <li>Enhances compressive strength of concrete</li>
