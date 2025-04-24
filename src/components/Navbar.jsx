@@ -153,6 +153,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaBars, FaTimes, FaHome, FaInfoCircle, FaProductHunt, FaBlog, FaComments, FaPhone } from 'react-icons/fa';
 import Logo from "../assets/logo1.png";
+import Logo1 from "../assets/logo2.png";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -214,7 +215,13 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
-                        <img src={Logo} alt="logo" className='w-[240px]' />
+                    {isScrolled ? (
+  <img src={Logo} alt="logo" className='w-[240px]' />
+) : (
+  <img src={Logo1} alt="logo" className='w-[240px]' />
+)}
+
+                       
                     </div>
                     <div className="hidden lg:flex space-x-4">
                         {navLinks.map((link) => (

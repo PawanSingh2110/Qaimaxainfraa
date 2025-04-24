@@ -25,7 +25,7 @@ const CounterSection = () => {
         transition={{ duration: 1 }}
         className="relative z-10 text-3xl font-bold text-center text-white mb-8"
       >
-        Eco-Friendly | Innovation | Performance
+        Quality | Eco-Friendly | Durability
       </motion.h3>
 
       {/* Counter Section */}
