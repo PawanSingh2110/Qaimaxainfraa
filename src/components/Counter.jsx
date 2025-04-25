@@ -31,10 +31,10 @@ const CounterSection = () => {
       {/* Counter Section */}
       <div className="relative z-10 flex justify-center gap-10 flex-wrap text-white text-center">
         {[
-          { label: "Clients", end: 134 },
-          { label: "Manufacturers", end: 54 },
-          { label: "Projects", end: 432 },
-          { label: "Cities", end: 6 },
+          { label: "Clients", end: 69 },
+          { label: "Manufacturers", end: 15 },
+          { label: "Projects", end: 110 },
+          { label: "Cities", end: 2 },
            // New counter added
         ].map((item, index) => (
           <motion.div
