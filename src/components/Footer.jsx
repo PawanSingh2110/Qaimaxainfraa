@@ -101,13 +101,23 @@ const Footer = ({ item }) => {
 
             <p className="mb-2">
               Phone:{" "}
-              <a href="tel:+919819320999" className="hover:text-orange-400">
+              <a
+                href="https://wa.me/919819320999"
+                className="hover:text-orange-400"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 +91 9819320999
               </a>
             </p>
             <p className="mb-2">
               Landline:{" "}
-              <a href="tel:+919321790831" className="hover:text-orange-400">
+              <a
+                href="https://wa.me/919321790831"
+                className="hover:text-orange-400"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 +91 9321790831
               </a>
             </p>
