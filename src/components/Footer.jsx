@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Footer = ({ item }) => {
+const Footer = () => {
   return (
     <footer className="bg-black text-white text-lg py-10" id="footer">
       <div className="container mx-auto px-4">
