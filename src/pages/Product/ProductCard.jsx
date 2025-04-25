@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
   return (
-    <div className="w-[400px] h-[500px] relative group overflow-hidden rounded-lg shadow-xl">
+    <div className="w-[400px] h-[500px]  relative group overflow-hidden rounded-lg shadow-xl">
       <img
         src={item.image}
         alt={item.name}

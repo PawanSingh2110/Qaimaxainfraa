@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
 import ProductCard from "../Product/ProductCard";
@@ -7,52 +7,69 @@ import Steel from "../../assets/steel.jpg";
 import Blocks from "../../assets/blocks1.jpg";
 import Ash from "../../assets/ash.jpg";
 import Agri from "../../assets/agri.jpg";
-import Pond from "../../assets/pond.jpg"
+import Pond from "../../assets/pond.jpg";
 
 const OurProduct = () => {
   const products = [
     {
       id: 1,
       name: "High-Quality Ready-Mix Concrete (RMC) for Reliable Construction",
-      description: "Our premium Ready-Mix Concrete (RMC) ensures strength, durability, and efficiency for all construction projects...",
+      description:
+        "Our premium Ready-Mix Concrete (RMC) ensures strength, durability, and efficiency for all construction projects...",
       image: RMC,
     },
     {
       id: 2,
-      name: "Durable  Blocks for Strong Foundations",
-      description: "Our high-quality  blocks offer superior strength, durability, and thermal insulation...",
+      name: "Durable Blocks for Strong Foundations",
+      description:
+        "Our high-quality blocks offer superior strength, durability, and thermal insulation...",
       image: Blocks,
     },
     {
       id: 3,
       name: "High-Quality Fly Ash for Sustainable Construction",
-      description: "Enhance your construction projects with premium fly ash – a fine, eco-friendly material...",
+      description:
+        "Enhance your construction projects with premium fly ash – a fine, eco-friendly material...",
       image: Ash,
     },
-        {
+    {
       id: 4,
       name: "Eco-Friendly Pond Ash for Sustainable Construction",
-      description: "Pond ash is a fine-grained byproduct of coal combustion, ideal for road construction, brick manufacturing, and soil stabilization. It offers a cost-effective, eco-friendly alternative to traditional materials, reducing environmental impact while enhancing durability.....",
+      description:
+        "Pond ash is a fine-grained byproduct of coal combustion, ideal for road construction, brick manufacturing, and soil stabilization...",
       image: Pond,
     },
-    
     {
       id: 5,
       name: "High-Quality Aggregate for Strong & Durable Construction",
-      description: "Our premium aggregates, including crushed stone, gravel, and sand, provide excellent strength...",
+      description:
+        "Our premium aggregates, including crushed stone, gravel, and sand, provide excellent strength...",
       image: Agri,
     },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slidesPerView =
-    typeof window !== "undefined"
-      ? window.innerWidth >= 1024
-        ? 3
-        : window.innerWidth >= 768
-        ? 2
-        : 1
-      : 1;
+  const [slidesPerView, setSlidesPerView] = useState(1);
+
+  useEffect(() => {
+    const updateSlidesPerView = () => {
+      if (window.innerWidth >= 1024) {
+        setSlidesPerView(3); // Large screen
+      } else if (window.innerWidth >= 768) {
+        setSlidesPerView(2); // Medium screen
+      } else {
+        setSlidesPerView(1); // Small screen
+      }
+    };
+
+    updateSlidesPerView(); // Set initial value on mount
+
+    window.addEventListener("resize", updateSlidesPerView); // Update on resize
+
+    return () => {
+      window.removeEventListener("resize", updateSlidesPerView); // Cleanup on unmount
+    };
+  }, []);
 
   const totalPages = Math.ceil(products.length / slidesPerView);
 
@@ -77,16 +94,14 @@ const OurProduct = () => {
     <div id="products" className="w-[90%] lg:w-[80%] mx-auto mt-14 relative">
       {/* Heading with scroll animation */}
       <motion.span
-  className="text-4xl font-medium text-black"
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  viewport={{ once: false, amount: 0.3 }} // Ensures animation runs every time the element appears in the viewport
->
-  Products
-</motion.span>
-
-
+        className="text-4xl font-medium text-black"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }} // Ensures animation runs every time the element appears in the viewport
+      >
+        Products
+      </motion.span>
 
       {/* Product Slider */}
       <div className="overflow-hidden relative mt-6">
