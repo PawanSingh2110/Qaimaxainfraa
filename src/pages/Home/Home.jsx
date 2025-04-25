@@ -8,7 +8,7 @@ import Testimonal from './Testimonal'
 const Home = () => {
   return (
     <div>
-      
+      {/* <Pointre/> */}
         <Herosection/>
         <Whoweare/>
         <Ourproduct/>
