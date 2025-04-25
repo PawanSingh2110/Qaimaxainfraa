@@ -18,9 +18,7 @@ const Footer = () => {
               <a href="/">QAIMAXA INFRA</a>
             </h2>
             <p className="mb-4">
-              QAIMAXA INFRA is a leading provider of innovative AI solutions,
-              dedicated to transforming industries through cutting-edge
-              technology and unparalleled expertise.
+            Qaimaxa Infra is a leading provider of construction services, offering premium materials and innovative solutions. We specialize in transforming the industry with unmatched expertise and reliability
             </p>
             <div className="flex space-x-4">
               <a

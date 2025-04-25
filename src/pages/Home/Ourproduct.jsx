@@ -54,10 +54,10 @@ const OurProduct = () => {
   useEffect(() => {
     const updateSlidesPerView = () => {
       const width = window.innerWidth;
-
-      // For screen width 630px to 640px, show 2 products
-      if (width >= 630 && width <= 640) {
-        setSlidesPerView(1);
+    
+      // For large screens (1440px and up), show 4 products
+      if (width >= 1440) {
+        setSlidesPerView(3);
       }
       // For large screens (1024px and up), show 3 products
       else if (width >= 1024) {
@@ -67,11 +67,16 @@ const OurProduct = () => {
       else if (width >= 641) {
         setSlidesPerView(2);
       }
+      // For screens between 630px and 640px, show 1 product
+      else if (width >= 630 && width <= 640) {
+        setSlidesPerView(1);
+      }
       // For small screens below 768px, show 1 product
       else {
         setSlidesPerView(1);
       }
     };
+    
 
     updateSlidesPerView(); // Set initial value on mount
 

@@ -255,12 +255,13 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div  className="flex items-center">
+            <a href="/">
             {isScrolled ? (
               <img src={Logo} alt="logo" className="w-[240px]" />
             ) : (
               <img src={Logo1} alt="logo" className="w-[240px]" />
-            )}
+            )}</a>
           </div>
           <div className="hidden lg:flex space-x-4">
             {navLinks.map((link) => (
