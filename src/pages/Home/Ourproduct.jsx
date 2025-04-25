@@ -53,12 +53,23 @@ const OurProduct = () => {
 
   useEffect(() => {
     const updateSlidesPerView = () => {
-      if (window.innerWidth >= 1024) {
-        setSlidesPerView(3); // Large screen
-      } else if (window.innerWidth >= 768) {
-        setSlidesPerView(2); // Medium screen
-      } else {
-        setSlidesPerView(1); // Small screen
+      const width = window.innerWidth;
+
+      // For screen width 630px to 640px, show 2 products
+      if (width >= 630 && width <= 640) {
+        setSlidesPerView(1);
+      }
+      // For large screens (1024px and up), show 3 products
+      else if (width >= 1024) {
+        setSlidesPerView(3);
+      }
+      // For medium screens (768px to 1023px), show 2 products
+      else if (width >= 641) {
+        setSlidesPerView(2);
+      }
+      // For small screens below 768px, show 1 product
+      else {
+        setSlidesPerView(1);
       }
     };
 
