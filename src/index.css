@@ -11,7 +11,8 @@ body{
 
 
 .whyme{
-    background-image: url("./assets/whyme.jpg");
+    background-image: url("./assets/back.png");
+    object-fit: cover;
 }
 
 .map{

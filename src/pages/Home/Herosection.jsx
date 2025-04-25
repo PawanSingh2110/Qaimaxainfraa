@@ -50,7 +50,7 @@ const HeroSection = () => {
           }`}
         />
       ))}
-      <div className="absolute inset-0 bg-black/30 bg-opacity-50 flex flex-col justify-center items-center text-center px-6">
+      <div className="absolute inset-0 bg-black/70 bg-opacity-50 flex flex-col justify-center items-center text-center px-6">
         {slides.map((slide, index) => (
           <div key={index} className={`transition-opacity duration-1000 ${currentSlide === index ? "opacity-100" : "opacity-0 hidden"}`}>
             <motion.h1
