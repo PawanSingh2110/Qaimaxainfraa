@@ -6,6 +6,7 @@ import Banner2 from "../../assets/banner2.jpg";
 import Banner3 from "../../assets/banner3.jpg";
 import banner6 from "../../assets/video1.mp4"; // ✅ imported video
 import banner7 from "../../assets/video2.mp4"; // ✅ imported video
+import banner8 from "../../assets/v5.mp4"; // ✅ imported video
 
 const slides = [
   {
@@ -19,7 +20,7 @@ const slides = [
     description: "Our blocks are made from high-quality materials, ensuring durability and strength for all your construction needs."
   },
   {
-    image: Banner2,
+    video: banner8,
     title: "Fly Ash for Sustainable Construction",
     description: "A versatile industrial byproduct used to enhance strength, durability, and eco-friendliness in construction projects."
   },
@@ -31,7 +32,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const isVideoSlide = !!slides[currentSlide].video;
-    const duration = isVideoSlide ? 6000 : 5000; // 10s for video, 5s for others
+    const duration = isVideoSlide ? 5000 : 5000; // 10s for video, 5s for others
   
     const interval = setTimeout(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
