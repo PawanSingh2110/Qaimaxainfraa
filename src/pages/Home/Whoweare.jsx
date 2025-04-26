@@ -31,7 +31,7 @@ const AboutSection = () => {
         <p className="text-xl mt-5 tracking-widest text-[#737373] ">
         QAIMAXA INFRA - Your Trusted Construction Partner.
 
-We supply quality construction materials at the best prices, ensuring reliability and timely delivery across Mumbai. From fly ash and RMC concrete  and ACC blocks, we provide everything you need for a strong and lasting build.
+We supply quality construction materials at the best prices, ensuring reliability and timely delivery across Mumbai and Navi Mumbai. From fly ash and RMC concrete  and ACC blocks, we provide everything you need for a strong and lasting build.
         </p>
       </motion.div>
 
