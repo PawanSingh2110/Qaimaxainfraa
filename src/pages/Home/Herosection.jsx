@@ -43,7 +43,7 @@ const HeroSection = () => {
   
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div id="home" className="relative w-full h-screen overflow-hidden">
       {slides.map((slide, index) => (
         <motion.div
           key={index}

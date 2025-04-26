@@ -212,7 +212,6 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { title: "Home", url: "/", icon: <FaHome /> },
     {
       title: "About",
       url: "#",
