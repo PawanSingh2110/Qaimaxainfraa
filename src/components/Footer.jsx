@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-4">Products</h2>
             <div className="flex">
-              <ul className="list-none mr-4">
+              <ul className="list-none mr-4 whitespace-nowrap">
                 <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
                   <Link to={`/product-detail/1`}>RMC</Link>
                 </li>
@@ -99,7 +99,7 @@ const Footer = () => {
 
             <p className="mb-2">
               Phone:{" "}
-              <a href="tel:+919819320999" className="hover:text-orange-400">
+              <a href="tel:+919819320999" className="hover:text-orange-400 whitespace-nowrap">
   +91 9819320999
 </a>
             </p>
@@ -107,7 +107,7 @@ const Footer = () => {
               Mobile no:{" "}
               <a
                 href="tel:+919321790831"
-                className="hover:text-orange-400"
+                className="hover:text-orange-400 whitespace-nowrap"
                 
               >
                 +91 9321790831
@@ -117,7 +117,7 @@ const Footer = () => {
               Email:{" "}
               <a
                 href="mailto:info@QAIMAXA INFRA"
-                className="hover:text-orange-400"
+                className="hover:text-orange-400 whitespace-normal"
               >
                 info@QAIMAXA INFRA{" "}
               </a>

@@ -1,131 +1,115 @@
-import React from "react";
-import Slider from "react-slick";
-import { FaQuoteLeft } from "react-icons/fa";
+import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 import { motion } from "framer-motion";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const testimonials = [
   {
-    name: "John Doe",
-    feedback: "Amazing service! The team was professional and efficient.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmF3JTIwcG9ydHJhaXQlMjBmYWNlfGVufDB8fDB8fHww",
+    name: "Sahil Ahuja",
+    title: "Dealer",
+    image: "https://i.pravatar.cc/100?img=1",
+    text: "Qaimaxa's professionalism and timely delivery exceeded our expectations. Highly recommended!",
   },
   {
-    name: "Jane Smith",
-    feedback: "Great experience! I highly recommend their services.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmF3JTIwcG9ydHJhaXQlMjBmYWNlfGVufDB8fDB8fHww",
+    name: "Firoz Sayed",
+    title: "Dealer",
+    image: "https://i.pravatar.cc/100?img=2",
+    text: "Their products are top quality and always on time. Great customer service too!",
   },
   {
-    name: "Michael Brown",
-    feedback: "They exceeded my expectations. Will use them again!",
-    image: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmF3JTIwcG9ydHJhaXQlMjBmYWNlfGVufDB8fDB8fHww",
+    name: "GreenArch",
+    title: "GreeenArch Construction",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbYqIiRaPctiyhPNoISeSEUNQ8tY2lTEKPEg&s",
+    text: "Impressed with the consistency and pricing. A reliable partner for our materials.",
   },
   {
-    name: "Emily Davis",
-    feedback: "Fast and reliable service. I’m very satisfied!",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    name: "Robert Wilson",
-    feedback: "Friendly staff and excellent customer support.",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJhdyUyMHBvcnRyYWl0JTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D",
-  },
-  {
-    name: "Sophia Martinez",
-    feedback: "A wonderful experience from start to finish!",
-    image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmF3JTIwcG9ydHJhaXQlMjBmYWNlfGVufDB8fDB8fHww",
+    name: "Good Shepherd Church",
+    title: "Client",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbYqIiRaPctiyhPNoISeSEUNQ8tY2lTEKPEg&s",
+    text: "Always on time, always top quality. Qaimaxa has streamlined our procurement process.",
   },
 ];
 
-const TestimonialSection = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    centerMode: true,
-    centerPadding: "0",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
+const TestimonialCarousel = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   return (
-    <motion.section  id="testimonials"
-      className="py-12 bg-gray-100 flex justify-center"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 50 }}
-      transition={{ duration: 0.5 }}
+    <div
+      className="relative bg-gray-100 py-10 px-4 sm:px-6 lg:px-8"
+      id="testimonials"
     >
-      <div className="w-[80%]">
-        <motion.h2 className="text-3xl font-bold"
-         initial={{ opacity: 0, y: 50 }}
-         whileInView={{ opacity: 1, y: 0 }}
-         transition={{ duration: 0.6 }}
-         viewport={{ once: false }} // Animation runs every time it appears
+      <div className="w-full max-w-7xl mx-auto text-center relative">
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: false }}
+          className="text-2xl sm:text-3xl font-bold mb-6 text-gray-800"
         >
-          <span className="text-black">
-            What Our Clients Say
-          </span>
+          What Our Clients Say
         </motion.h2>
-        <motion.p className="text-[#737373] mt-2"
-         initial={{ opacity: 0, y: 50 }}
-         whileInView={{ opacity: 1, y: 0 }}
-         transition={{ duration: 0.6 }}
-         viewport={{ once: false }} // Animation runs every time it appears
-        
-        >Real feedback from our satisfied customers.</motion.p>
-        <motion.div className="mt-8">
-          <Slider {...settings}>
-            {testimonials.map((testimonial, index) => (
-              <motion.div 
-                key={index} 
-                className="px-3"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="bg-white shadow-lg rounded-lg p-6 text-center h-full flex flex-col justify-between">
-                  <FaQuoteLeft className="text-orange-500 text-3xl mx-auto mb-2" />
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 mx-auto rounded-full"
-                  />
-                  <h3 className="mt-4 text-lg font-semibold">{testimonial.name}</h3>
-                  <p className="text-gray-600 mt-2">{testimonial.feedback}</p>
-                </div>
-              </motion.div>
-            ))}
-          </Slider>
-        </motion.div>
+
+        {/* Custom Arrows */}
+        <div className="absolute top-1/2 left-2 transform -translate-y-1/2 z-10">
+          <button ref={prevRef} className="bg-black p-2 rounded-full shadow-md">
+            <FiChevronLeft size={24} className="text-white" />
+          </button>
+        </div>
+        <div className="absolute top-1/2 right-2 transform -translate-y-1/2 z-10">
+          <button ref={nextRef} className="bg-black p-2 rounded-full shadow-md">
+            <FiChevronRight size={24} className="text-white" />
+          </button>
+        </div>
+
+        <Swiper
+  modules={[Navigation, Pagination, Autoplay]}
+  spaceBetween={16}
+  pagination={{ clickable: true }}
+  autoplay={{ delay: 5000 }}
+  navigation={{
+    prevEl: prevRef.current,
+    nextEl: nextRef.current,
+  }}
+  onBeforeInit={(swiper) => {
+    swiper.params.navigation.prevEl = prevRef.current;
+    swiper.params.navigation.nextEl = nextRef.current;
+  }}
+  breakpoints={{
+    0: { slidesPerView: 1 },
+    640: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  }}
+  className="!w-full"
+>
+  {testimonials.map((t, index) => (
+    <SwiperSlide key={index}>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: false, amount: 0.4 }} // triggers multiple times when re-entering view
+        className="bg-white rounded-xl shadow-md p-6 h-full mx-auto max-w-sm"
+      >
+        <p className="w-16 h-16 text-2xl font-extrabold flex justify-center items-center bg-black text-amber-200 mx-auto rounded-full border-4 border-gray-500 mb-4">
+          {t.name[0]}
+        </p>
+        <h3 className="text-lg sm:text-xl font-semibold">{t.name}</h3>
+        <p className="text-sm text-gray-500 mb-3">{t.title}</p>
+        <p className="text-gray-600 text-sm sm:text-base italic">“{t.text}”</p>
+      </motion.div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
       </div>
-    </motion.section>
+    </div>
   );
 };
 
-export default TestimonialSection;
+export default TestimonialCarousel;

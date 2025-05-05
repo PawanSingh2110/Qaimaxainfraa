@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Banner1 from "../../assets/banner1.jpg";
 import Slider from "../../components/Slider";
-
+import Logo from "../../assets/logo3.png"
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
@@ -89,7 +89,7 @@ export default function HamburgerMenu() {
         ref={logoRef}
         className="logo text-3xl fixed top-0 z-50 left-[50%] -translate-x-1/2 font-mono"
       >
-        logo
+        <img src={Logo} alt="" className="w-28" />
       </div>
 
       {/* Page Content */}
