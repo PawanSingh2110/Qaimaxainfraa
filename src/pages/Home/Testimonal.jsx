@@ -1,4 +1,5 @@
 import { useRef } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -7,14 +8,14 @@ import { motion } from "framer-motion";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const testimonials = [
   {
-    name: "Sahil Ahuja",
-    title: "Client",
+    name: "Sahil Mandal",
+    title: "Eco Brilliance",
     image: "https://i.pravatar.cc/100?img=1",
     text: "Qaimaxa's professionalism and timely delivery exceeded our expectations. Highly recommended!",
   },
   {
     name: "Firoz Sayed",
-    title: "Client",
+    title: "client",
     image: "https://i.pravatar.cc/100?img=2",
     text: "Their products are top quality and always on time. Great customer service too!",
   },
