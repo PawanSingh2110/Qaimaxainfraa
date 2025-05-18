@@ -52,26 +52,26 @@ const Footer = () => {
             </div>
           </div>
           {/* Products */}
-          <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
+          <div className="w-full md:w-1/3 px-3 mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-4">Products</h2>
             <div className="flex">
-              <ul className="list-none mr-4 whitespace-nowrap">
+              <ul className="list-none mr-4 whitespace-nowrap ">
                 <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
-                  <Link to={`/product-detail/1`}>RMC</Link>
+                  <Link to={"/product-detail/1"}>RMC</Link>
                 </li>
                 <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
-                  <Link to={`/product-detail/3`}>Fly Ash</Link>
+                  <Link to={"/product-detail/3"}>Fly Ash</Link>
                 </li>
                 <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
-                  <Link to={`/product-detail/4`}>Pond Ash</Link>
+                  <Link to={"/product-detail/4"}>Pond Ash</Link>
                 </li>
               </ul>
               <ul className="list-none">
                 <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
-                  <Link to={`/product-detail/2`}>Blocks</Link>
+                  <Link to={"/product-detail/2"}>Blocks</Link>
                 </li>
                 <li className="mb-2 before:content-['>'] before:mr-3 hover:text-orange-400">
-                  <Link to={`/product-detail/5`}>Aggregates</Link>
+                  <Link to={"/product-detail/5"}>Aggregates</Link>
                 </li>
               </ul>
             </div>
@@ -80,14 +80,14 @@ const Footer = () => {
           <div className="w-full md:w-1/3 px-4">
             <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
             <a
-              href="https://www.google.com/maps?q=Trust+Bldg,+Shop+No+2,+2nd+Cross+Lane,+Aloo+Paroo,+Lady+Jamshedji+Rd,+Mahim+West,+Mumbai,+Maharashtra+400016"
+              href="https://www.google.com/maps/place/QAIMAXA+LLP/@19.0399628,72.8393368,1472m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3be7c9d47a9b576b:0x5f8bfbcfe72fa863!8m2!3d19.0399577!4d72.8419117!16s%2Fg%2F11mctlrrdh?entry=ttu&g_ep=EgoyMDI1MDUwMy4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
             >
               <address className="not-italic mb-4 hover:text-orange-400 cursor-pointer">
-                Trust Bldg, office no 5,
+              Aloo Paroo,Trust Building , 
                 <br />
-                2nd Cross Lane, Aloo Paroo,
+                Office no 5, 2nd Cross Lane, ,
                 <br />
                 Lady Jamshedji Rd,
                 <br />
@@ -99,7 +99,7 @@ const Footer = () => {
 
             <p className="mb-2">
               Phone:{" "}
-              <a href="tel:+919819320999" className="hover:text-orange-400 whitespace-nowrap">
+              <a href="tel:+919819320999" className="hover:text-orange-400">
   +91 9819320999
 </a>
             </p>
@@ -107,7 +107,7 @@ const Footer = () => {
               Mobile no:{" "}
               <a
                 href="tel:+919321790831"
-                className="hover:text-orange-400 whitespace-nowrap"
+                className="hover:text-orange-400"
                 
               >
                 +91 9321790831
@@ -117,7 +117,7 @@ const Footer = () => {
               Email:{" "}
               <a
                 href="mailto:info@QAIMAXA INFRA"
-                className="hover:text-orange-400 whitespace-normal"
+                className="hover:text-orange-400"
               >
                 info@QAIMAXA INFRA{" "}
               </a>
@@ -136,4 +136,3 @@ const Footer = () => {
 };
 
 export default Footer;
-3;

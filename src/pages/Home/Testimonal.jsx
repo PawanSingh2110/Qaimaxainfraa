@@ -8,13 +8,13 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const testimonials = [
   {
     name: "Sahil Ahuja",
-    title: "Dealer",
+    title: "Client",
     image: "https://i.pravatar.cc/100?img=1",
     text: "Qaimaxa's professionalism and timely delivery exceeded our expectations. Highly recommended!",
   },
   {
     name: "Firoz Sayed",
-    title: "Dealer",
+    title: "Client",
     image: "https://i.pravatar.cc/100?img=2",
     text: "Their products are top quality and always on time. Great customer service too!",
   },
